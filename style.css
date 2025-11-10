@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* navbar */
+
+body {
+    background-color: #1e1062;
+    color: white; 
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+header{
+    max-width: 1140px;
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 100px;
+    width: auto;
+
+}
+.Navbar-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+.Navbar-link{
+    text-decoration: none;
+    color: #c7c1df;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.Navbar-link:hover{
+    color: white;
+}
+.btn-purchase{
+    background-color: #e93a7d;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 35px;
+    font-weight: 700;
+}
+.btn-purchase:hover{
+    background-color: #ff4f91;
+    color: white;
+}
+
