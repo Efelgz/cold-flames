@@ -22,6 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .logo{
     text-decoration: none;
@@ -63,3 +64,106 @@ header{
     color: white;
 }
 
+<<<<<<< Updated upstream
+=======
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+    width: 90%;
+    margin: 60px auto;
+    padding: 40px;
+}
+.hero-section h2{
+    font-family: DM Sans;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+.hero-section p{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.paragraph-hero{
+    width: 400px;
+    margin-bottom: 20px;
+    height: auto;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 1px;
+
+}
+.btn-learn-more {
+    background-color: #e93a7d;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    
+    display: inline-block; 
+    align-self: flex-start;
+}
+
+.btn-learn-more:hover{
+    background-color: #ff4f91;
+}
+
+.hamburger-menu{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+.hamburger-menu .bar{
+    display:  block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(237, 199, 199);
+    border-radius: 5px;
+}
+/* Responsive Design */
+@media (max-width: 768px){
+
+    .Navbar-list{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1e1062;
+        padding: 20px 0;
+        border-top: 1px solid #444;
+
+    }
+    .hamburger-menu{
+        display: flex;
+    }
+    #nav-toggle:checked ~ nav .Navbar-list{
+        display: flex;
+    }
+    .hero-section {
+        padding: 30px 25px;
+    }
+    .hero-section h1{
+        font-size: 38px;
+    }
+    .hero-section p{
+        font-size: 24px;
+    }
+    .btn-learn-more{
+        align-items: center;
+    }
+}
+>>>>>>> Stashed changes
