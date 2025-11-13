@@ -248,15 +248,32 @@ input:focus {
     .main-container {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        gap: 30px;
         padding-top: 20px;
     }
     
     .hero-content {
+        max-width: 100%;
+        padding: 0 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         margin-bottom: 40px;
     }
-    
+    .hero-content p{
+        font-size: 18px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .hero-content h1 {
         font-size: 42px;
+    }
+    .card{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
     
     .Navbar-list {
