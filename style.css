@@ -1,166 +1,268 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
-/* navbar */
 
 body {
-    background-color: #1e1062;
+    background-color: #2f1893;
     color: white; 
     font-family: 'Poppins', sans-serif; 
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header{
-    max-width: 1140px;
+/* 2. NAVBAR AYARLARI */
+header {
+    max-width: 1170px;
     width: 90%;
-    margin: auto;
-    padding: 25px 0;
+    margin: 0 auto;
+    padding: 40px 0; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-.logo{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-.logo img{
-    height: 100px;
-    width: auto;
 
+.logo h3 {
+    color: white;
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
 }
-.Navbar-list{
+
+.logo {
+    text-decoration: none;
+}
+
+.Navbar-list {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 35px;
+    gap: 30px;
 }
 
-.Navbar-link{
+.navbar-link {
     text-decoration: none;
-    color: #c7c1df;
-    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7); 
+    font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.Navbar-link:hover{
+.navbar-link:hover {
     color: white;
 }
-.btn-purchase{
-    background-color: #e93a7d;
-    color: white;
+
+.btn-purchase {
+    background-color: #ff2d55; 
+    color: white !important;
     padding: 12px 30px;
     border-radius: 35px;
-    font-weight: 700;
-}
-.btn-purchase:hover{
-    background-color: #ff4f91;
-    color: white;
+    font-weight: 600;
 }
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 500px;
+.btn-purchase:hover {
+    background-color: #e02448;
+}
+
+.main-container {
+    flex: 1;
+    max-width: 1170px;
     width: 90%;
-    margin: 60px auto;
-    padding: 40px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-bottom: 50px;
+    gap: 50px;
 }
-.hero-section h2{
-    font-family: DM Sans;
-    font-style: bold;
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 70px;
-    letter-spacing: -1px;
-}
-.hero-section p{
-    font-family: DM Sans;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-}
-.paragraph-hero{
-    width: 400px;
-    margin-bottom: 20px;
-    height: auto;
-    font-family: DM Sans;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 1px;
 
+.hero-content {
+    flex: 1; 
+    max-width: 500px;
 }
+
+.hero-content h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 58px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+
 .btn-learn-more {
-    background-color: #e93a7d;
+    display: inline-block;
+    background-color: #ff2d55;
     color: white;
-    padding: 15px 30px;
-    border-radius: 35px;
+    padding: 18px 40px;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-learn-more:hover {
+    background-color: #e02448;
+}
+
+
+.card {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 50px 40px;
+    border-radius: 10px; 
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
     text-align: center;
+    flex-shrink: 0;
+}
+
+.card h2 {
+    color: #1e0e62;
+    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Input Alanları */
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 18px 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 50px; 
+    box-sizing: border-box; 
+    font-size: 16px;
+    outline: none;
+    color: #1e0e62;
+}
+
+input::placeholder {
+    color: rgba(21, 21, 21, 0.4);
     
-    display: inline-block; 
-    align-self: flex-start;
 }
 
-.btn-learn-more:hover{
-    background-color: #ff4f91;
+input:focus {
+    border-color: #2f1893;
 }
 
-.hamburger-menu{
+/* Checkbox */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    justify-content: flex-start; 
+    padding-left: 10px;
+}
+
+.terms input {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    accent-color: #2cdcf2; 
+    cursor: pointer;
+}
+
+/* Butonlar */
+.btn-primary {
+    width: 100%;
+    padding: 18px;
+    background-color: #482be7; 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(72, 43, 231, 0.3);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+.divider:not(:empty)::before { margin-right: .5em; }
+.divider:not(:empty)::after { margin-left: .5em; }
+
+.btn-twitter {
+    width: 100%;
+    padding: 18px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #888;
+}
+
+.footer-text a {
+    color: #2cdcf2; 
+    text-decoration: none;
+}
+
+/* MOBİL AYARLAR */
+.hamburger-menu {
     display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 6px;
 }
-.hamburger-menu .bar{
-    display:  block;
+.hamburger-menu .bar {
+    display: block;
     width: 25px;
     height: 3px;
-    background-color: rgb(237, 199, 199);
+    background-color: white;
     border-radius: 5px;
 }
-/* Responsive Design */
-@media (max-width: 768px){
 
-    .Navbar-list{
-        display: none;
+@media (max-width: 900px) {
+    .main-container {
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #1e1062;
-        padding: 20px 0;
-        border-top: 1px solid #444;
-
+        text-align: center;
+        padding-top: 20px;
     }
-    .hamburger-menu{
+    
+    .hero-content {
+        margin-bottom: 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 42px;
+    }
+    
+    .Navbar-list {
+        display: none;
+    }
+    .hamburger-menu {
         display: flex;
-    }
-    #nav-toggle:checked ~ nav .Navbar-list{
-        display: flex;
-    }
-    .hero-section {
-        padding: 30px 25px;
-    }
-    .hero-section h1{
-        font-size: 38px;
-    }
-    .hero-section p{
-        font-size: 24px;
-    }
-    .btn-learn-more{
-        align-items: center;
     }
 }
